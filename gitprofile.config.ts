@@ -13,7 +13,7 @@ const CONFIG = {
   projects: {
     github: {
       display: true, // Display GitHub projects?
-      header: 'Github Projects',
+      header: 'Projetos no Github',
       mode: 'automatic', // Mode can be: 'automatic' or 'manual'
       automatic: {
         sortBy: 'stars', // Sort projects by 'stars' or 'updated'
@@ -95,25 +95,25 @@ const CONFIG = {
   certifications: [
     {
       name: 'Leadership and Communication',
-      body: 'Harvard University,
+      body: 'Harvard University',
       year: 'Agosto 2024',
       link: 'https://credentials.edx.org/credentials/f1e77046c9344b04a6f430947b99da31/',
     },
     {
       name: 'AWS Certified Cloud Practitioner',
-      body: 'Amazon Web Services,
+      body: 'Amazon Web Services',
       year: 'Maio 2022',
       link: 'https://www.credly.com/badges/ee8dac03-bd03-402c-93bb-13d457f4d2e6',
     },
     {
       name: 'Google Analytics Certification',
-      body: 'Google,
+      body: 'Google',
       year: 'Julho 2024',
       link: 'https://skillshop.credential.net/c2b2fc7d-4574-4667-b870-161e80cb5d13',
     },
     {
       name: 'EF SET English Certificate 84/100 (C2 Proficient)',
-      body: 'EF SET,
+      body: 'EF SET',
       year: 'Julho 2023',
       link: 'https://cert.efset.org/siWkN3',
     },
