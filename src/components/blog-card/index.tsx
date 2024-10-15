@@ -4,7 +4,7 @@ import { AiOutlineContainer } from 'react-icons/ai';
 import { getDevPost, getMediumPost } from '@arifszn/blog-js';
 import { formatDistance } from 'date-fns';
 import { SanitizedBlog } from '../../interfaces/sanitized-config';
-import { ga, skeleton } from '../../utils';
+import { ga, skeleton, Translator } from '../../utils';
 import { Article } from '../../interfaces/article';
 
 const BlogCard = ({
@@ -164,7 +164,7 @@ const BlogCard = ({
       <div className="text-center mb-6">
         <AiOutlineContainer className="mx-auto h-12 w-12 opacity-30" />
         <p className="mt-1 text-sm opacity-50 text-base-content">
-          No recent post
+          <Translator path="noRecentPosts" />
         </p>
       </div>
     );
@@ -188,7 +188,7 @@ const BlogCard = ({
                     skeleton({ widthCls: 'w-28', heightCls: 'h-8' })
                   ) : (
                     <span className="text-base-content opacity-70">
-                      My Articles
+                      <Translator path="myArticles" />
                     </span>
                   )}
                 </h5>

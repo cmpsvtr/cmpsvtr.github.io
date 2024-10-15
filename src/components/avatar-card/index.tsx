@@ -1,6 +1,6 @@
 import { FALLBACK_IMAGE } from '../../constants';
 import { Profile } from '../../interfaces/profile';
-import { skeleton } from '../../utils';
+import { skeleton, Translator } from '../../utils';
 import LazyImage from '../lazy-image';
 
 interface AvatarCardProps {
@@ -89,7 +89,7 @@ const AvatarCard: React.FC<AvatarCardProps> = ({
               download
               rel="noreferrer"
             >
-              Download Resume
+              <Translator path="downloadResume" />
             </a>
           ))}
       </div>
