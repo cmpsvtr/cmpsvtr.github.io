@@ -100,7 +100,7 @@ const PublicationCard = ({
                   )}
                   {item.authors && (
                     <p className="text-base-content opacity-50 text-sm">
-                      <Translator path="author" />: {item.authors} 
+                      <Translator path="author" />: {item.authors}
                     </p>
                   )}
                   {item.description && (

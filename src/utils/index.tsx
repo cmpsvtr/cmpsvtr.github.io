@@ -2,7 +2,7 @@ import { hotjar } from 'react-hotjar';
 import { LOCAL_STORAGE_KEY_NAME } from '../constants';
 import { DEFAULT_CUSTOM_THEME } from '../constants/default-custom-theme';
 import { DEFAULT_THEMES } from '../constants/default-themes';
-import { useTranslation } from 'react-i18next'
+import { useTranslation } from 'react-i18next';
 import colors from '../data/colors.json';
 import {
   SanitizedConfig,
@@ -35,7 +35,9 @@ export const getSanitizedConfig = (
       projects: {
         github: {
           display: config?.projects?.github?.display ?? true,
-          header: config?.projects?.github?.header || Translator({path: "githubProjects"}),
+          header:
+            config?.projects?.github?.header ||
+            Translator({ path: 'githubProjects' }),
           mode: config?.projects?.github?.mode || 'automatic',
           automatic: {
             sortBy: config?.projects?.github?.automatic?.sortBy || 'stars',
@@ -52,7 +54,9 @@ export const getSanitizedConfig = (
           },
         },
         external: {
-          header: config?.projects?.external?.header || Translator({path: "myProjects"}),
+          header:
+            config?.projects?.external?.header ||
+            Translator({ path: 'myProjects' }),
           projects: config?.projects?.external?.projects || [],
         },
       },
@@ -237,7 +241,7 @@ export const getLanguageColor = (language: string): string => {
   }
 };
 
-export const Translator = ({ path }: {path: string}) => {
-  const { t } = useTranslation() 
-  return t(path)
-}
+export const Translator = ({ path }: { path: string }) => {
+  const { t } = useTranslation();
+  return t(path);
+};

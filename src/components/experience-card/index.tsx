@@ -65,7 +65,9 @@ const ExperienceCard = ({
             {loading ? (
               skeleton({ widthCls: 'w-32', heightCls: 'h-8' })
             ) : (
-              <span className="text-base-content opacity-70">{<Translator path="experience" />}</span>
+              <span className="text-base-content opacity-70">
+                {<Translator path="experience" />}
+              </span>
             )}
           </h5>
         </div>
