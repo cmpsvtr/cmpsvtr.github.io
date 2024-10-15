@@ -1,7 +1,7 @@
 import { Fragment } from 'react';
 import { AiOutlineFork, AiOutlineStar } from 'react-icons/ai';
 import { MdInsertLink } from 'react-icons/md';
-import { ga, getLanguageColor, skeleton } from '../../utils';
+import { ga, getLanguageColor, skeleton, Translator } from '../../utils';
 import { GithubProject } from '../../interfaces/github-project';
 
 const GithubProjectCard = ({
@@ -159,7 +159,7 @@ const GithubProjectCard = ({
                       rel="noreferrer"
                       className="text-base-content opacity-50 hover:underline"
                     >
-                      See All
+                      {<Translator path="seeAll" />}
                     </a>
                   )}
                 </div>

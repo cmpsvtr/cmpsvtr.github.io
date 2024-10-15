@@ -1,4 +1,4 @@
-import { skeleton } from '../../utils';
+import { skeleton, Translator } from '../../utils';
 
 const SkillCard = ({
   loading,
@@ -28,7 +28,7 @@ const SkillCard = ({
             {loading ? (
               skeleton({ widthCls: 'w-32', heightCls: 'h-8' })
             ) : (
-              <span className="text-base-content opacity-70">Tech Stack</span>
+              <span className="text-base-content opacity-70"><Translator path="techStack" /></span>
             )}
           </h5>
         </div>

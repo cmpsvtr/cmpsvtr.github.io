@@ -1,6 +1,6 @@
 import React from 'react';
 import { SanitizedCertification } from '../../interfaces/sanitized-config';
-import { skeleton } from '../../utils';
+import { skeleton, Translator } from '../../utils';
 
 const ListItem = ({
   year,
@@ -67,7 +67,7 @@ const CertificationCard = ({
               skeleton({ widthCls: 'w-32', heightCls: 'h-8' })
             ) : (
               <span className="text-base-content opacity-70">
-                Certification
+                <Translator path="certifications" />
               </span>
             )}
           </h5>

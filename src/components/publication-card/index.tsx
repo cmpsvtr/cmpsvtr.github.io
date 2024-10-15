@@ -1,6 +1,6 @@
 import { Fragment } from 'react';
 import { SanitizedPublication } from '../../interfaces/sanitized-config';
-import { skeleton } from '../../utils';
+import { skeleton, Translator } from '../../utils';
 
 const PublicationCard = ({
   publications,
@@ -100,7 +100,7 @@ const PublicationCard = ({
                   )}
                   {item.authors && (
                     <p className="text-base-content opacity-50 text-sm">
-                      Author: {item.authors}
+                      <Translator path="author" />: {item.authors} 
                     </p>
                   )}
                   {item.description && (
@@ -130,7 +130,7 @@ const PublicationCard = ({
                       skeleton({ widthCls: 'w-40', heightCls: 'h-8' })
                     ) : (
                       <span className="text-base-content opacity-70">
-                        Publications
+                        <Translator path="publications" />
                       </span>
                     )}
                   </h5>

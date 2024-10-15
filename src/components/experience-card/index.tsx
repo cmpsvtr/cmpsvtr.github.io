@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import { SanitizedExperience } from '../../interfaces/sanitized-config';
-import { skeleton } from '../../utils';
+import { skeleton, Translator } from '../../utils';
 
 const ListItem = ({
   time,
@@ -65,7 +65,7 @@ const ExperienceCard = ({
             {loading ? (
               skeleton({ widthCls: 'w-32', heightCls: 'h-8' })
             ) : (
-              <span className="text-base-content opacity-70">Experience</span>
+              <span className="text-base-content opacity-70">{<Translator path="experience" />}</span>
             )}
           </h5>
         </div>
